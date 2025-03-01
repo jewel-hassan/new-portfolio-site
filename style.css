@@ -1,0 +1,221 @@
+body{
+    background-color: rgb(24, 23, 23);
+    color:#fff;
+    scroll-behavior: smooth;
+}
+/* HEADER SECTION */
+.navbar-light .navbar-brand{
+    color: #fff !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.brand-logo{
+    background-image: linear-gradient(red, yellow);
+    border-radius: 12px;
+    padding: 0 .5rem;
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+   /* Icon color will be white */
+}
+/* HERO SECTION */
+.left-side{
+    color: #fff;
+    margin-top: 4rem;
+}
+.title-text{
+    color: rgb(2, 253, 44);
+}
+.right-side{
+    text-align: right;
+}
+.right-side img{
+    width: 65%;
+    border: 5px solid rgb(77, 78, 77);
+    border-radius: 50%;
+}
+.icon-content{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+   /* Space between icons */
+}
+/* Styling Social Icons */
+.social-icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+   /* Circle Shape */
+    border: 3px solid green;
+   /* Green Border */
+    text-decoration: none;
+    font-size: 1rem;
+    color: green;
+   /* Green Icon Color */
+    transition: 0.3s;
+}
+/* Hover Effect */
+.social-icon a:hover {
+    background-color: green;
+    color: white;
+    transform: scale(1.1);
+   /* Slight Zoom */
+}
+/*END HERO SECTION */
+/* START SERVICES SECTION */
+.service-text{
+    font-size: 14px;
+    color: rgb(141, 131, 131);
+}
+.service i{
+    font-size: 2rem;
+}
+.services-bg {
+    transition: all 0.4s ease-in-out;
+   /* Smooth transition for all properties */
+    background-color: rgba(56, 53, 53, 0.623);
+    padding: 1.5rem;
+    border-radius: 10px;
+   /* Optional: Soft rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   /* Light shadow */
+}
+.services-bg:hover {
+    background-color: rgb(243, 26, 178);
+    transform: translateY(-8px) scale(1.05);
+   /* Moves up & slightly scales */
+    box-shadow: 0px 10px 20px rgba(243, 26, 178, 0.3);
+   /* Glow effect */
+}
+/* ✅ Work Section (Box Styles) */
+.work-box {
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+   /* ✅ প্রয়োজনমতো উচ্চতা */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    overflow: hidden;
+   /* ✅ বাড়তি অংশ লুকানো */
+    margin-bottom: 20px;
+}
+/* ✅ আলাদা আলাদা ইমেজ সেট */
+.work-one {
+    background-image: url("image/work-1.png");
+}
+.work-two {
+    background-image: url("image/work-2.png");
+}
+.work-three {
+    background-image: url("image/work-3.png");
+}
+/* ✅ Hover Overlay Content */
+.sub-work {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+   /* ✅ Dark Transparent Overlay */
+    display: flex;
+   /* ✅ Flexbox ব্যবহার */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(100%);
+   /* ✅ নিচ থেকে শুরু */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+/* ✅ Hover Effect */
+.work-box:hover .sub-work {
+    opacity: 1;
+    transform: translateY(0);
+}
+.sub-work i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+   /* Circle Shape */
+    border: 3px solid white;
+   /* Green Border */
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+   /* Green Icon Color */
+    transition: 0.3s;
+}
+.contact-icon {
+    display: flex;
+    gap: 15px;
+   /* Space between icons */
+}
+.contact-icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+   /* Circle Shape */
+    border: 3px solid rgb(251, 252, 251);
+   /* Green Border */
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(245, 248, 245);
+   /* Green Icon Color */
+    transition: 0.3s;
+}
+.contact-icon a:hover {
+    background-color: #fff;
+    color: #333;
+    transform: scale(1.1);
+   /* Slight Zoom */
+}
+footer{
+    background-color: #474646;
+    padding: .5rem;
+    color: #868282;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .icon-content {
+        flex-direction: column;
+       /* "cloumn" ভুল ছিল, সঠিক হচ্ছে "column" */
+   }
+    .right-side{
+        text-align: center;
+        margin-top: 2rem;
+   }
+    h2{
+        text-align: center;
+   }
+    .btn-subhit{
+        text-align: center;
+   }
+    .contact-div{
+        text-align: center;
+   }
+    .contact-icon{
+        justify-content: center;
+        align-items: center;
+   }
+}
